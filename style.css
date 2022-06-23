@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Dosis:wght@400;500&family=Work+Sans:wght@200;300;400;500&display=swap');
+
+@font-face {
+  font-family: 'Paradiso';
+  src: url(SweetHipster.ttf);
+}
+
+body {
+  background-color: #FEFDFD;
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+}
+
+.topbar {
+  background-color: #B57070;
+  max-width: 100%;
+  max-height: 100%;
+  height: 2%;
+  top: 0;
+  position: fixed;
+}
+
+.mainNavBar {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #FEFDFD;
+  border-bottom: 2px solid #B57070;
+  position: fixed;
+  margin: 0;
+  top: 2%;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  text-align: center;
+  padding: 2% 5%;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+li a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+
+li a:hover {
+  /* background-color: white; */
+  /* opacity: 90%; */
+  color: #FF6666;
+  transition: 0.4s ease-out;
+}
+
+.mainNavH {
+  height: 100;
+}
+
+/* .mainbodyContent {
+  margin-top: 7%;
+} */
+
+.webTitle {
+  font-family: 'Paradiso';
+  font-size: 10em;
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
+  transition: 0.4s ease;
+  color: #2d2828;
+}
+
+.webTitle:hover {
+  transition: 0.4s ease;
+  color: #851515;
+}
+
+.webSubTitle {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.2em;
+  font-weight: 300;
+  text-align: center;
+}
+
+.subTitle {
+  margin: 0;
+  top: 0;
+  position: inherit;
+  border-bottom: 0;
+  padding: 0;
+  margin-top: -2%;
+  font-size: 0.8em;
+  color: #B57070;
+}
+
+.subscribeBanner {
+  margin-top: 3%;
+  background-color: #cfa2a2;
+  padding: 2.5%;
+
+}
+
+#emailLabel{
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.4em;
+  margin-right: 2%;
+  color: #FEFDFD;
+  background-color: #cfa2a2;
+  padding: 2.5%;
+}
+
+#email {
+  font-family: 'Work Sans', sans-serif;
+  border: #851515;
+  background-color: #FEFDFD;
+  float: right;
+  text-align: center;
+  padding: 1.5%;
+  padding-right: 3%;
+  padding-left: 3%;
+  margin-top: -1%;
+}
+
+.postsSidebar {
+  display: inline-block;
+}
+
+.postContainer {
+  width: 63%;
+  float: left;
+  padding: 3%;
+  padding-right: 0%;
+  padding-top: 5%;
+}
+
+.sidebarContainer {
+  width: 25%;
+  float: right;
+  padding: 3%;
+  padding-right: 4%;
+  padding-top: 5%;
+}
+
+.post {
+  padding: 5%;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.alt {
+  background-color: #eed6d6;
+}
+
+.post:first-child {
+  margin-top: 0%;
+  padding-top: 0%;
+}
+
+.category {
+  color: #FF6666;
+  font-weight: 500;
+  margin: 0;
+}
+
+.tags {
+  font-style: italic;
+}
+
+.postImgSum {
+  width: 100%;
+  height: 70%;
+}
+
+.metaDataSum {
+  width: 100%;
+  margin-bottom: 7%;
+  display: block;
+  color: #5a5151;
+}
+
+.metaDataSum .author {
+  float: left;
+}
+
+.metaDataSum .date {
+  float: right;
+}
+
+.postTitleSum, .postTitleSum a {
+  text-align: left;
+  font-family: 'Abel', sans-serif;
+  font-weight: 600;
+  color: #851515;
+  text-decoration: none;
+  transition: 0.4s ease;
+}
+
+.postTitleSum a:hover {
+  color: #B57070;
+  transition: 0.4s ease;
+}
+
+.postSnippet {
+  font-family: 'Work Sans', sans-serif;
+  line-height: 150%;
+  text-align: left;
+}
+
+.readMore {
+  font-family: 'Work Sans', sans-serif;
+  border: 3px solid #B57070;
+  transition: 0.4s ease;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  background-color: #FEFDFD;
+  cursor: pointer;
+}
+
+.readMore:hover {
+  transition: 0.4s ease;
+  background-color: #B57070;
+  color: #FEFDFD;
+}
+
+a {
+  color: #FF6666;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  transition: 0.4s ease;
+  color: #851515;
+}
+
+.aboutTitle {
+  font-family: 'Paradiso';
+  font-size: 9em;
+  line-height: 120%;
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
+  transition: 0.4s ease;
+  color: #851515;
+}
+
+.aboutText {
+  font-family: 'Work Sans', sans-serif;
+  line-height: 150%;
+  text-align: center;
+}
+
+.dividerSide {
+  max-width: 100%;
+  height: 2%;
+  border-bottom-style: solid;
+  border-bottom-color: #B57070;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+#emailSide {
+  font-family: 'Work Sans', sans-serif;
+  width: 100%;
+  padding: 3%;
+  border: 2px solid #851515;
+  background-color: #FEFDFD;
+}
+
+.follow {
+  font-family: 'Abel', sans-serif;
+  font-weight: 600;
+  color: #851515;
+  text-align: center;
+}
+
+.followBtn {
+  font-family: 'Work Sans', sans-serif;
+  border: 3px solid #B57070;
+  transition: 0.4s ease;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  color: #FEFDFD;
+  background-color: #B57070;
+  cursor: pointer;
+  margin-top: 2%;
+  width: 100%;
+}
+
+.followBtn:hover {
+  transition: 0.4s ease;
+  border: 3px solid #851515;
+  background-color: #851515;
+}
+
+.sidebarImg {
+  width: 100%;
+  height: 25%;
+}
+
+.socialIcon {
+  width: 100%;
+}
+
+.socialIcon img {
+  width: 22%;
+}
+
+/* .socialIcon img {
+  transition: 0.4s ease;
+  background-size: 200px 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #851515;
+} */
+
+.socialIconDiv {
+  width: 100%;
+  display: inline-block;
+  margin: 0;
+}
+
+.searchSection {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+}
+
+.search1 {
+  border: 2px solid #851515;
+  padding: 3%;
+  font-size: 1.2em;
+  font-family: 'Work Sans', sans-serif;
+  display: inline-block;
+  margin: 0;
+  width: 85.85%;
+}
+
+.submitForSearch {
+  color: #FEFDFD;
+  border: 1px solid #851515;
+  background-color: #851515;
+  padding: 4.8% 4.8%;
+  display: inline-block;
+  margin: 0;
+  float: left;
+}
+
+.submitForSearch:hover {
+  cursor: pointer;
+  background-color: #B57070;
+  transition: 0.4s ease;
+  border: 1px solid #B57070;
+}
+
+.footerSectionCols {
+  margin-top: 0;
+  padding-left: 5%;
+  background-color: #B57070;
+}
+
+.column1Footer {
+  width: 28%;
+  display: inline-block;
+  text-align: left;
+  margin-right: 4%;
+}
+
+.column2Footer {
+  width: 28%;
+  display: inline-block;
+  text-align: left;
+  margin-right: 4%;
+}
+
+.column3Footer {
+  width: 28%;
+  display: inline-block;
+  text-align: left;
+}
+
+.socialIconDivFooter {
+  width: 100%;
+  display: inline-block;
+  margin: 0;
+  text-align: center;
+}
+
+.socialIconDivFooter h4 {
+  text-align: left;
+  font-size: 1.2em;
+
+}
+
+.socialIconFt img {
+  width: 20%;
+  padding-left: 2%;
+  padding-right: 2%
+}
+
+.socialIconFt img:first-child {
+  padding-left: 0%;
+  margin-left: 0%;
+}
+
+.footerSectionCols .followBtn {
+  border: 1px solid #851515;
+  background-color: #851515;
+  margin-bottom: 1%;
+}
+
+.footerSectionCols h1, h4 {
+  font-family: 'Abel', sans-serif;
+  font-weight: 600;
+}
+
+footer, footer p {
+  background-color: #905959;
+  color: #FEFDFD;
+  text-align: center;
+  font-size: 0.9em;
+  bottom: 0;
+  margin: 0;
+  padding: 0.3%;
+}
+
+.column2Footer h4 a {
+  color: black;
+}
+
+.column2Footer h4 a:hover {
+  transition: 0.4s ease;
+  color: #851515;
+}
+
+/* POSTS */
+
+.postPgTitle {
+  margin-top: 2%;
+}
+
+.mainNavBarPostPg {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #FEFDFD;
+  border-bottom: 2px solid #B57070;
+  border-top: 2px solid #B57070;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 2%;
+  width: 100%;
+
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.addPad {
+  padding-top: 6%;
+}
+
+.postText {
+  font-family: 'Work Sans', sans-serif;
+  line-height: 150%;
+  text-align: left;
+}
+
+div .gallery {
+  border: 2px solid #905959;
+  width: 100%;
+  margin: 6%;
+  margin-left: 0%;
+}
+
+div.gallery:hover {
+  transition: 0.4s ease;
+  border: 2px solid #B57070;
+}
+
+div.desc {
+  padding: 4%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 1%;
+  padding-left: 0%;
+}
+
+.Thirds {
+  flex: 31%;
+  max-width: 31%;
+  padding: 0% 1%;
+}
+
+.Fifths {
+  flex: 18%;
+  max-width: 18%;
+  padding: 0% 1%;
+}
+
+.column img {
+  vertical-align: middle;
+  width: 100%;
+  height: auto;
+}
+
+.commentgraphic {
+  width: 570px;
+  height: 281px;
+  align-items: center;
+}
+
+.commentQs {
+  font-size: 120%;
+}
+
+.aboutWelcome {
+  font-family: 'Paradiso';
+  font-size: 5em;
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
+  transition: 0.4s ease;
+  color: #2d2828;
+}
+
+.aboutSub {
+
+}
+
+.webTitle:hover {
+  transition: 0.4s ease;
+  color: #851515;
+}
